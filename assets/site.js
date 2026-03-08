@@ -1,3 +1,21 @@
+const languageSwitches = document.querySelectorAll("[data-lang-switch]");
+const activeLang = document.documentElement.lang.toLowerCase().startsWith("zh")
+  ? "zh"
+  : "en";
+
+languageSwitches.forEach((link) => {
+  link.addEventListener("click", () => {
+    try {
+      window.localStorage.setItem("site-lang", link.dataset.langSwitch);
+    } catch (_) {}
+  });
+
+  if (link.dataset.langSwitch === activeLang) {
+    link.classList.add("is-active");
+    link.setAttribute("aria-current", "page");
+  }
+});
+
 const revealItems = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {

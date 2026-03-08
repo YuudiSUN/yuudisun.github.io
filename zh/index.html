@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUN Yudi | AI, Web &amp; Automation | Textile</title>
+    <title>SUN Yudi | AI、网站与自动化 | Textile</title>
     <meta
       name="description"
-      content="SUN Yudi is a master's student at Universite Paris-Saclay focused on distributed systems, high-performance computing, AI-assisted workflows, and digital business projects across web, automation, and textile execution."
+      content="SUN Yudi 是巴黎萨克雷大学硕士生，关注分布式系统、高性能计算、AI 辅助工作流，以及网站、自动化和面向真实业务场景的数字化项目。"
     />
-    <link rel="alternate" hreflang="en" href="./" />
-    <link rel="alternate" hreflang="zh-CN" href="zh/" />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="alternate" hreflang="en" href="../" />
+    <link rel="alternate" hreflang="zh-CN" href="./" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
     <script>
       (() => {
         const key = "site-lang";
@@ -18,42 +18,29 @@
         try {
           const saved = window.localStorage.getItem(key);
 
-          if (saved === "zh") {
-            window.location.replace("zh/");
-            return;
-          }
-
-          if (!saved) {
-            const langs =
-              window.navigator.languages && window.navigator.languages.length
-                ? window.navigator.languages
-                : [window.navigator.language || ""];
-            const prefersChinese = langs.some((lang) => /^zh(?:-|$)/i.test(lang));
-
-            if (prefersChinese) {
-              window.location.replace("zh/");
-            }
+          if (saved === "en") {
+            window.location.replace("../");
           }
         } catch (_) {}
       })();
     </script>
-    <link rel="stylesheet" href="assets/site.css" />
-    <script defer src="assets/site.js"></script>
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script defer src="../assets/site.js"></script>
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="#top">SUN Yudi</a>
         <div class="header-tools">
-          <nav class="site-nav" aria-label="Main navigation">
-            <a href="#about">About</a>
-            <a href="#focus">Focus</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+          <nav class="site-nav" aria-label="主导航">
+            <a href="#about">关于</a>
+            <a href="#focus">方向</a>
+            <a href="#projects">项目</a>
+            <a href="#contact">联系</a>
           </nav>
-          <div class="lang-switch" aria-label="Language switch">
-            <a class="lang-link is-active" href="./" data-lang-switch="en">EN</a>
-            <a class="lang-link" href="zh/" data-lang-switch="zh">中文</a>
+          <div class="lang-switch" aria-label="语言切换">
+            <a class="lang-link" href="../" data-lang-switch="en">EN</a>
+            <a class="lang-link is-active" href="./" data-lang-switch="zh">中文</a>
           </div>
         </div>
       </header>
@@ -61,20 +48,17 @@
       <main id="top">
         <section class="hero reveal">
           <div class="hero-copy">
-            <p class="eyebrow">Distributed Computing · AI Workflows · Digital Systems</p>
+            <p class="eyebrow">分布式计算 · AI 工作流 · 数字系统</p>
             <h1>SUN Yudi</h1>
             <p class="lead">
-              Master&rsquo;s student in Distributed Computing, building websites,
-              AI-assisted workflows, and digital systems for real-world business use.
+              分布式计算方向硕士生，正在构建网站、AI 辅助工作流，以及面向真实商业场景的数字系统。
             </p>
             <p class="hero-summary">
-              Currently interning at Topade Textile, working on website structure,
-              brand presentation, and business-oriented digital content for a clearer
-              online presence.
+              目前在 Topade Textile 实习，参与网站结构、品牌呈现和面向业务的数字内容建设，帮助企业形成更清晰、更可用的线上形象。
             </p>
 
             <div class="cta-group">
-              <a class="button button-primary" href="#projects">View Projects</a>
+              <a class="button button-primary" href="#projects">查看项目</a>
               <a
                 class="button button-secondary"
                 href="https://github.com/YuudiSUN"
@@ -89,27 +73,27 @@
                 rel="noreferrer"
                 >LinkedIn</a
               >
-              <a class="button button-secondary" href="#contact">Contact Me</a>
+              <a class="button button-secondary" href="#contact">联系我</a>
               <a
                 class="button button-secondary"
-                href="assets/SUN-Yudi-CV.pdf"
+                href="../assets/SUN-Yudi-CV.pdf"
                 target="_blank"
                 rel="noreferrer"
-                >CV</a
+                >下载 CV</a
               >
             </div>
 
             <div class="hero-highlights">
               <article class="fact-card">
-                <span>Education</span>
+                <span>教育背景</span>
                 <strong>Universit&eacute; Paris-Saclay</strong>
               </article>
               <article class="fact-card">
-                <span>Academic Track</span>
+                <span>学术方向</span>
                 <strong>Distributed Systems / HPC</strong>
               </article>
               <article class="fact-card">
-                <span>Applied Track</span>
+                <span>应用方向</span>
                 <strong>AI Workflows / Digital Business</strong>
               </article>
             </div>
@@ -119,26 +103,26 @@
             <div class="portrait-panel">
               <img
                 class="portrait-image"
-                src="sunyudi_photo_web.jpg"
-                alt="Portrait of SUN Yudi"
+                src="../sunyudi_photo_web.jpg"
+                alt="SUN Yudi 的照片"
               />
-              <p class="portrait-badge">Current role · Internship at Topade Textile</p>
+              <p class="portrait-badge">当前工作 · Topade Textile 实习</p>
             </div>
 
             <div class="compact-card">
-              <p class="card-label">Profile Snapshot</p>
+              <p class="card-label">概览</p>
               <ul class="mini-list">
                 <li>
-                  <span>Focus</span>
-                  <strong>Distributed systems and computing</strong>
+                  <span>聚焦</span>
+                  <strong>分布式系统与计算</strong>
                 </li>
                 <li>
-                  <span>Strength</span>
-                  <strong>Turning system thinking into practical digital delivery</strong>
+                  <span>优势</span>
+                  <strong>把系统思维转成可落地的数字交付</strong>
                 </li>
                 <li>
-                  <span>Working on</span>
-                  <strong>Websites, automation, and business-facing tools</strong>
+                  <span>正在做</span>
+                  <strong>网站、自动化与面向业务的工具</strong>
                 </li>
               </ul>
             </div>
@@ -149,30 +133,23 @@
           <div class="section-heading">
             <p class="section-index">01</p>
             <div>
-              <p class="section-kicker">About</p>
-              <h2>Who I am</h2>
+              <p class="section-kicker">关于</p>
+              <h2>我是谁</h2>
             </div>
           </div>
 
           <div class="about-grid">
             <article class="section-panel">
               <p>
-                I am a master&rsquo;s student at Universit&eacute; Paris-Saclay, with a
-                focus on distributed computing, high-performance systems, and
-                applied digital solutions. Beyond academics, I am also interested
-                in turning technical thinking into practical value through websites,
-                automation, and business-oriented digital tools. My work sits
-                between engineering, product structure, and real-world execution.
+                我是巴黎萨克雷大学的硕士生，关注分布式计算、高性能系统以及面向实际应用的数字化方案。除了学术方向之外，我也希望把技术思维转化为现实价值，通过网站、自动化和面向业务的数字工具来完成真正可落地的工作。我的实践处在工程、产品结构和真实执行之间。
               </p>
             </article>
 
             <article class="info-card">
-              <p class="card-label">Current Work</p>
-              <h3>Topade Textile internship</h3>
+              <p class="card-label">当前工作</p>
+              <h3>Topade Textile 实习</h3>
               <p>
-                I currently support website structure, brand presentation, and
-                business-facing digital content, helping the company shape a clearer
-                and more usable online identity.
+                目前我在 Topade Textile 参与网站结构、品牌呈现和业务内容组织，帮助公司建立更清晰、更好用的线上形象。
               </p>
             </article>
           </div>
@@ -182,36 +159,33 @@
           <div class="section-heading">
             <p class="section-index">02</p>
             <div>
-              <p class="section-kicker">Skills &amp; Focus</p>
-              <h2>Three directions I work on</h2>
+              <p class="section-kicker">技能与方向</p>
+              <h2>我主要做的三个方向</h2>
             </div>
           </div>
 
           <div class="skill-grid">
             <article class="skill-card">
               <p class="skill-no">01</p>
-              <h3>Distributed Systems &amp; Computing</h3>
+              <h3>分布式系统与计算</h3>
               <p>
-                Graduate-level work around distributed computing, system thinking,
-                and high-performance execution for demanding technical contexts.
+                围绕分布式计算、系统思维和高性能执行展开的研究与实践，适合更偏技术密集型的问题场景。
               </p>
             </article>
 
             <article class="skill-card">
               <p class="skill-no">02</p>
-              <h3>AI-assisted Workflow Automation</h3>
+              <h3>AI 辅助工作流自动化</h3>
               <p>
-                Designing practical AI-supported workflows that reduce manual work,
-                improve delivery speed, and organize information into usable systems.
+                设计更实用的 AI 支持型工作流，减少重复劳动，提高交付效率，并把信息整理成可直接使用的系统。
               </p>
             </article>
 
             <article class="skill-card">
               <p class="skill-no">03</p>
-              <h3>Website &amp; Digital Business Presence</h3>
+              <h3>网站与数字化商业呈现</h3>
               <p>
-                Turning a business or personal profile into a clearer online
-                presence through structure, content planning, and web execution.
+                通过结构、内容规划和网页实现，把个人或企业的线上呈现做得更清晰、更专业、更易于理解。
               </p>
             </article>
           </div>
@@ -221,24 +195,22 @@
           <div class="section-heading">
             <p class="section-index">03</p>
             <div>
-              <p class="section-kicker">Selected Projects</p>
-              <h2>Real work and representative builds</h2>
+              <p class="section-kicker">代表项目</p>
+              <h2>真实项目与代表性实践</h2>
             </div>
           </div>
 
           <div class="work-grid">
             <article class="work-card work-card-featured">
-              <p class="card-label">Project 01</p>
+              <p class="card-label">项目 01</p>
               <h3>Topade Textile Official Website</h3>
               <p>
-                During my internship, I worked on the website structure, brand
-                presentation, content planning, and Elementor-based page design to
-                make the company&rsquo;s online identity clearer and more usable.
+                在实习期间，我参与了 Topade Textile 官网的网站结构、品牌呈现、内容策划以及基于 Elementor 的页面设计，让公司的线上形象更清晰，也更方便业务沟通与展示。
               </p>
               <dl class="project-meta">
                 <div>
-                  <dt>Role</dt>
-                  <dd>Web structure, brand presentation, content planning, and Elementor page design</dd>
+                  <dt>角色</dt>
+                  <dd>网站结构、品牌呈现、内容策划与 Elementor 页面设计</dd>
                 </div>
               </dl>
               <div class="project-links">
@@ -247,23 +219,21 @@
                   href="https://topadetextile.com"
                   target="_blank"
                   rel="noreferrer"
-                  >Visit Website</a
+                  >访问网站</a
                 >
               </div>
             </article>
 
             <article class="work-card">
-              <p class="card-label">Project 02</p>
+              <p class="card-label">项目 02</p>
               <h3>M1S2Projet</h3>
               <p>
-                A technical academic project in Python focused on two-variable
-                polynomial interpolation, representing analytical thinking,
-                mathematical implementation, and structured project work.
+                一个基于 Python 的学术技术项目，聚焦于二元多项式插值，体现了分析思维、数学实现和更结构化的项目完成方式。
               </p>
               <dl class="project-meta">
                 <div>
-                  <dt>Role</dt>
-                  <dd>Student developer</dd>
+                  <dt>角色</dt>
+                  <dd>学生开发者</dd>
                 </div>
               </dl>
               <div class="project-links">
@@ -272,23 +242,21 @@
                   href="https://github.com/YuudiSUN/M1S2Projet"
                   target="_blank"
                   rel="noreferrer"
-                  >View Repository</a
+                  >查看仓库</a
                 >
               </div>
             </article>
 
             <article class="work-card">
-              <p class="card-label">Project 03</p>
+              <p class="card-label">项目 03</p>
               <h3>CDX Telecom</h3>
               <p>
-                A business website project aimed at presenting telecom services
-                more clearly online and improving the company&rsquo;s digital
-                credibility and communication.
+                一个面向企业实际使用的网站项目，目标是更清晰地展示 telecom 服务内容，并提升公司的线上可信度与沟通效率。
               </p>
               <dl class="project-meta">
                 <div>
-                  <dt>Role</dt>
-                  <dd>Website builder and digital presentation support</dd>
+                  <dt>角色</dt>
+                  <dd>网站搭建与数字呈现支持</dd>
                 </div>
               </dl>
               <div class="project-links">
@@ -297,7 +265,7 @@
                   href="https://cdxtelecom.com/"
                   target="_blank"
                   rel="noreferrer"
-                  >Visit Website</a
+                  >访问网站</a
                 >
               </div>
             </article>
@@ -308,19 +276,17 @@
           <div class="section-heading">
             <p class="section-index">04</p>
             <div>
-              <p class="section-kicker">Contact</p>
-              <h2>Let&rsquo;s connect</h2>
+              <p class="section-kicker">联系</p>
+              <h2>欢迎联系我</h2>
             </div>
           </div>
 
           <div class="contact-grid">
             <article class="contact-panel">
-              <p class="card-label">Direct Contact</p>
-              <h3>For academic, technical, or business collaboration</h3>
+              <p class="card-label">直接联系</p>
+              <h3>欢迎学术、技术或业务合作交流</h3>
               <p>
-                Email is the fastest way to reach me. I am open to conversations
-                around systems, AI workflow design, websites, and business-facing
-                digital projects.
+                邮件是联系我最快的方式。我对系统方向、AI 工作流设计、网站建设以及面向业务的数字化项目都保持开放交流。
               </p>
               <div class="contact-list">
                 <a href="mailto:sunyudi7@gmail.com">sunyudi7@gmail.com</a>
@@ -344,17 +310,17 @@
               <a
                 class="link-tile"
                 href="mailto:sunyudi7@gmail.com"
-                aria-label="Send email to SUN Yudi"
+                aria-label="发送邮件给 SUN Yudi"
               >
-                <span>Email</span>
+                <span>邮箱</span>
                 <strong>sunyudi7@gmail.com</strong>
               </a>
               <a
                 class="link-tile"
                 href="mailto:yudi@topade.com"
-                aria-label="Send email to SUN Yudi at Topade"
+                aria-label="发送邮件到工作邮箱"
               >
-                <span>Work Email</span>
+                <span>工作邮箱</span>
                 <strong>yudi@topade.com</strong>
               </a>
               <a
@@ -364,7 +330,7 @@
                 rel="noreferrer"
               >
                 <span>GitHub</span>
-                <strong>Open Profile</strong>
+                <strong>打开主页</strong>
               </a>
               <a
                 class="link-tile"
@@ -373,16 +339,16 @@
                 rel="noreferrer"
               >
                 <span>LinkedIn</span>
-                <strong>Open Profile</strong>
+                <strong>打开主页</strong>
               </a>
               <a
                 class="link-tile"
-                href="assets/SUN-Yudi-CV.pdf"
+                href="../assets/SUN-Yudi-CV.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
                 <span>CV</span>
-                <strong>Download PDF</strong>
+                <strong>下载 PDF</strong>
               </a>
             </div>
           </div>
