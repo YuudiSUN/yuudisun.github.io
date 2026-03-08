@@ -323,6 +323,23 @@ body.is-scrolled .site-header {
   transform: rotate(-2deg);
 }
 
+.portrait-frame {
+  aspect-ratio: 4 / 5;
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  border: 1px solid rgba(24, 33, 38, 0.08);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 247, 235, 0.75));
+}
+
+.portrait-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .hero-card h2 {
   margin: 0 0 0.9rem;
   font-size: 2.3rem;
