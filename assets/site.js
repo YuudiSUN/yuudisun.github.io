@@ -24,12 +24,6 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
 
-const currentYear = document.querySelector("#year");
-
-if (currentYear) {
-  currentYear.textContent = new Date().getFullYear();
-}
-
 const toggleScrolledState = () => {
   document.body.classList.toggle("is-scrolled", window.scrollY > 18);
 };

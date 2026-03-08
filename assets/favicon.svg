@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="favicon-title">
+  <title id="favicon-title">SY favicon</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d5ecf" />
+      <stop offset="100%" stop-color="#cb5b2e" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)" />
+  <circle cx="94" cy="34" r="14" fill="rgba(255,255,255,0.22)" />
+  <text
+    x="64"
+    y="78"
+    text-anchor="middle"
+    font-family="Avenir Next, Arial, sans-serif"
+    font-size="48"
+    font-weight="700"
+    fill="#fff9ef"
+    letter-spacing="2"
+  >
+    SY
+  </text>
+</svg>
