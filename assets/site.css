@@ -349,6 +349,8 @@ body.is-scrolled .site-header {
 
 .portrait-panel {
   position: relative;
+  aspect-ratio: 3 / 4;
+  padding: 0.75rem 0.75rem 4.1rem;
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(255, 249, 239, 0.96), rgba(246, 236, 219, 0.9));
@@ -356,9 +358,11 @@ body.is-scrolled .site-header {
 
 .portrait-image {
   width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   object-position: center top;
+  border-radius: calc(var(--radius) - 10px);
+  background: rgba(255, 255, 255, 0.42);
 }
 
 .portrait-badge {
